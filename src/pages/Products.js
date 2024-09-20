@@ -7,21 +7,21 @@ const Product = () => {
   const [APIData, setAPIData] = useState([]);
   useEffect(() => {
     axios
-      .get(`https://66ea644a55ad32cda4789858.mockapi.io/crackers`)
+      .get(`https://66ebbc1e2b6cf2b89c5b759e.mockapi.io/dharma`)
       .then((response) => {
         setAPIData(response.data);
       });
   }, []);
   const getData = () => {
     axios
-      .get(`https://66ea644a55ad32cda4789858.mockapi.io/crackers`)
+      .get(`https://66ebbc1e2b6cf2b89c5b759e.mockapi.io/dharma`)
       .then((getData) => {
         setAPIData(getData.data);
       });
   };
   const handleDelete = (id) => {
     axios
-      .delete(`https://66ea644a55ad32cda4789858.mockapi.io/crackers/${id}`)
+      .delete(`https://66ebbc1e2b6cf2b89c5b759e.mockapi.io/dharma/${id}`)
       .then(() => {
         getData();
       });
@@ -65,7 +65,7 @@ const Product = () => {
                       <img
                         style={{ width: "60px" }}
                         src={
-                          "https://raw.githubusercontent.com/prakashwiser/assets/main/crackers_wiser/" +
+                          "https://raw.githubusercontent.com/dharmagktr/fruits_images/main/" +
                           data.image
                         }
                         alt="images"

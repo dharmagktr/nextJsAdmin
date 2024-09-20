@@ -16,7 +16,7 @@ const AddProduct = () => {
     e.preventDefault();
 
    
-    axios.post(`https://66ea644a55ad32cda4789858.mockapi.io/crackers`, {
+    axios.post(`https://66ebbc1e2b6cf2b89c5b759e.mockapi.io/dharma`, {
       name,
       price,
       piece,
@@ -111,7 +111,7 @@ const AddProduct = () => {
         </div>
         <div className="mb-3">
           <label htmlFor="piece" className="form-label">
-            Piece
+            Kilo Grams
           </label>
           <input
             type="text"
@@ -133,11 +133,12 @@ const AddProduct = () => {
             onChange={(e) => setListingType(e.target.value)}
             required
           >
-            <option value="bomb">Bomb</option>
-            <option value="chakkaram">Sangu chakkaram</option>
-            <option value="lakshmi">Lakshmi</option>
-            <option value="saram">Saram vedi</option>
-            <option value="solapori">Sola Pori</option>
+            <option value="apple">Apple</option>
+            <option value="banana">Banana </option>
+            <option value="grapes">Grapes</option>
+            <option value="litchi">Litchi </option>
+            <option value="plums">Plums</option>
+            <option value="gua">Gua</option>
             <option value="others">Others</option>
           </select>
         </div>
@@ -151,3 +152,4 @@ const AddProduct = () => {
 };
 
 export default AddProduct;
+
